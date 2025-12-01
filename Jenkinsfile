@@ -56,7 +56,7 @@ spec:
         
         // SonarQube Config
         SONAR_HOST_URL = 'https://sonarcloud.io'
-        SONAR_ORG = 'test-booking-ap' // Your SonarCloud Organization Key
+        SONAR_ORG = 'test-booking-application' // Your SonarCloud Organization Key
     }
 
     stages {
