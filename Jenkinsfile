@@ -199,6 +199,11 @@ spec:
                     // Update values.yaml with new image tag
                     sh """
                         cd charts/${APP_NAME}
+
+                        # make sure we are on a real local main branch, not detached HEAD
+                        git fetch origin
+                        git checkout -B main origin/main
+    
                         sed -i 's/tag: .*/tag: ${DOCKER_TAG}/' values.yaml
                         git config user.email "jenkins@ci.local"
                         git config user.name "Jenkins CI"
