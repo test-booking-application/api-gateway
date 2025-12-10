@@ -34,4 +34,4 @@ resources:
 env:
   NODE_ENV: production
   PORT: "8080"
-  MONGO_URI: "mongodb://mongodb.dev.svc.cluster.local:27017/userdb"
+  MONGO_URI: "mongodb://root:password123@mongodb.dev.svc.cluster.local:27017/userdb?authSource=admin"
