@@ -74,8 +74,13 @@ app.get('/api/docs', (req, res) => {
 const proxyOptions = {
     changeOrigin: true,
     logLevel: 'debug',
+    proxyTimeout: 30000, // 30 seconds timeout for backend
+    timeout: 30000, // 30 seconds timeout for request
     onProxyReq: (proxyReq, req, res) => {
         console.log(`Proxying ${req.method} request to: ${proxyReq.path}`);
+    },
+    onProxyRes: (proxyRes, req, res) => {
+        console.log(`Received response with status: ${proxyRes.statusCode}`);
     },
     onError: (err, req, res) => {
         console.error('Proxy error:', err);
