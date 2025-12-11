@@ -13,7 +13,8 @@ const BOOKING_SERVICE_URL = process.env.BOOKING_SERVICE_URL || 'http://booking-s
 
 // Middleware
 app.use(cors());
-app.use(express.json());
+// NOTE: express.json() is NOT used here because it conflicts with proxy middleware
+// The proxy needs to forward the raw request body
 
 // Logging middleware
 app.use((req, res, next) => {
