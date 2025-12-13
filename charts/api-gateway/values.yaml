@@ -1,7 +1,7 @@
 image:
   repository: 044302809167.dkr.ecr.us-east-1.amazonaws.com/ticket-booking/api-gateway
   pullPolicy: IfNotPresent
-  tag: 3-7adcb780e0540526eb26aa0be28fcd47260c4aa6
+  tag: 1-68664583e319138e094040d80501fd174b76d2d2
 
 service:
   type: ClusterIP
