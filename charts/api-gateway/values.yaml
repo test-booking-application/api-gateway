@@ -13,10 +13,9 @@ ingress:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}, {"HTTPS": 443}]'
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
     alb.ingress.kubernetes.io/group.name: "ticket-booking-apps"
     alb.ingress.kubernetes.io/group.order: "1"
-    alb.ingress.kubernetes.io/certificate-arn: "arn:aws:acm:us-east-1:044302809167:certificate/131bf54a-c97d-4d69-b4d2-af41478aa618"
   hosts:
     - host: ticketbooking.duckdns.org
       paths:
