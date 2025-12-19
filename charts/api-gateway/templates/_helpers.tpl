@@ -25,6 +25,8 @@ Create a default fully qualified app name.
 Common labels
 */}}
 {{- define "api-gateway.labels" -}}
+app: {{ include "api-gateway.name" . }}
+version: {{ .Chart.AppVersion | default "v1" | quote }}
 helm.sh/chart: {{ include "api-gateway.chart" . }}
 {{ include "api-gateway.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
