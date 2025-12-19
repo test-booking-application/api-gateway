@@ -14,7 +14,7 @@ ingress:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
-    alb.ingress.kubernetes.io/group.name: "ticket-booking-apps"
+    alb.ingress.kubernetes.io/group.name: "ticket-booking-tools"
     alb.ingress.kubernetes.io/group.order: "1"
   hosts:
     - host: ticketbooking.aws.booking007.space
