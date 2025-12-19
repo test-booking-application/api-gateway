@@ -17,15 +17,15 @@ ingress:
     alb.ingress.kubernetes.io/group.name: "ticket-booking-apps"
     alb.ingress.kubernetes.io/group.order: "1"
   hosts:
-    - host: ticketbooking.aws.booking007.space
+    - host: ticketbooking.duckdns.org
       paths:
         - path: /api
           pathType: Prefix
-    - host: aws.booking007.space
+    - host: booking007.space
       paths:
         - path: /api
           pathType: Prefix
-    - host: www.aws.booking007.space
+    - host: www.booking007.space
       paths:
         - path: /api
           pathType: Prefix
