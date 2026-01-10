@@ -1,5 +1,5 @@
 image:
-  repository: 044302809167.dkr.ecr.us-east-1.amazonaws.com/ticket-booking/api-gateway
+  repository: 173235558072.dkr.ecr.us-east-1.amazonaws.com/ticket-booking/api-gateway
   pullPolicy: IfNotPresent
   tag: 28-4f7e40966df81b740e018be9e6f0598afe6cc381
 
